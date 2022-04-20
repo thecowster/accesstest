@@ -1,0 +1,5 @@
+
+	proc base64UrlEncode { str } {
+		set enc [scramble $str "" -base64]
+		return [convertBase64ToBase64Url $enc]
+	}
